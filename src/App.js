@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import "./App.css";
 import Logo from "./components/logo.js";
 import Cadastro from "./components/cadastro-tela.js";

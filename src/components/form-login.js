@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import styles from "./form-login.module.css";
 import Input from "./form/input.js";
 import Entrar from "./form/entrar.js";
