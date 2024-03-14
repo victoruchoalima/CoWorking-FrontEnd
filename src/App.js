@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Logo from "./components/logo.js";
+import Cadastro from "./components/cadastro-tela.js";
+import Botao01 from "./components/botao01.js";
+import Botao02 from "./components/botao02.js";
+import Sociais from "./components/sociais.js";
+import Home from "./components/home.js";
+import Login from "./components/login-cliente.js";
+import Input from "./components/form/input.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Login />
     </div>
   );
 }
