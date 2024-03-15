@@ -1,16 +1,16 @@
 import Logo from "./logo";
-import styles from "./login-cliente.module.css";
+import styles from "./login-colaborador.module.css";
 import Sociais from "./sociais";
 import Form from "./form-login";
 
-function LoginCliente() {
+function LoginColab() {
   return (
     <div>
       <div className={styles.loginWrapper}>
         <Logo />
         <div className={styles.loginConteiner}>
-          <h1>Cliente</h1>
-          <Form />
+          <h1>Colaborador</h1>
+          <Form showInscricao={false} />
         </div>
       </div>
       <Sociais />
@@ -18,4 +18,4 @@ function LoginCliente() {
   );
 }
 
-export default LoginCliente;
+export default LoginColab;

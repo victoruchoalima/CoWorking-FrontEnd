@@ -3,8 +3,16 @@ import styles from "./form-login.module.css";
 import Input from "./form/input.js";
 import Entrar from "./form/entrar.js";
 import Lembrar from "./form/lembrar.js";
+import Inscreva from "./form/inscreva.js";
 
-function Form() {
+function Form({ showInscricao }) {
+  if (showInscricao) {
+    return (
+      <>
+        <Inscreva />
+      </>
+    );
+  }
   return (
     <form className={styles.form}>
       <Input text="Usuário" type="text" placeholder="E-mail" name="usuario" />
@@ -16,9 +24,6 @@ function Form() {
       />
       <Lembrar />
       <Entrar text="Entrar" />
-      <p>
-        Não possui uma conta? <a href="#">Inscreva-se </a>
-      </p>
     </form>
   );
 }
